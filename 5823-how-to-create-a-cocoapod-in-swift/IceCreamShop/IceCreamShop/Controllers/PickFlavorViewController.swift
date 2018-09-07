@@ -67,11 +67,11 @@ public class PickFlavorViewController: UIViewController {
                       encoding: PropertyListEncoding.xml)
       .responsePropertyList { [weak self] (response) -> Void in
         
-        guard let self = self else {
+        guard let `self` = self else {
           return
         }
         
-        self.hideLoadingHUD()
+        `self`.hideLoadingHUD()
         
         let flavorsArray: [[String : String]]
         
@@ -83,9 +83,9 @@ public class PickFlavorViewController: UIViewController {
           return
         }
         
-        self.flavors = flavorsArray.compactMap(Flavor.init(dictionary:))
-        self.collectionView.reloadData()
-        self.selectFirstFlavor()
+        `self`.flavors = flavorsArray.compactMap(Flavor.init(dictionary:))
+        `self`.collectionView.reloadData()
+        `self`.selectFirstFlavor()
     }
   }
   
