@@ -18,9 +18,11 @@
 		42801B781A881E5500DEB026 /* IceCreamView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42801B771A881E5500DEB026 /* IceCreamView.swift */; };
 		42B433FB1A89ECFB0091170B /* FlavorFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B433FA1A89ECFB0091170B /* FlavorFactory.swift */; };
 		42C970621A8C9CAF002FEFF3 /* UIColor+RGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C970611A8C9CAF002FEFF3 /* UIColor+RGBA.swift */; };
+		918C2EB961F9649FF5648323 /* Pods_IceCreamShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A47580245AF29C9A6FD20DAD /* Pods_IceCreamShop.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		286B7DD464CAA6D2661DC534 /* Pods-IceCreamShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceCreamShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceCreamShop/Pods-IceCreamShop.debug.xcconfig"; sourceTree = "<group>"; };
 		4274BF161A88264600937936 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		4274BF181A88268F00937936 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		4274BF1B1A88274600937936 /* Flavor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Flavor.swift; sourceTree = "<group>"; };
@@ -35,6 +37,8 @@
 		42B433FA1A89ECFB0091170B /* FlavorFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlavorFactory.swift; sourceTree = "<group>"; };
 		42B433FC1A89F78F0091170B /* IceCreamShop-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IceCreamShop-Bridging-Header.h"; sourceTree = "<group>"; };
 		42C970611A8C9CAF002FEFF3 /* UIColor+RGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+RGBA.swift"; sourceTree = "<group>"; };
+		A47580245AF29C9A6FD20DAD /* Pods_IceCreamShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IceCreamShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD54072056326AB8038C92D9 /* Pods-IceCreamShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceCreamShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceCreamShop/Pods-IceCreamShop.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				918C2EB961F9649FF5648323 /* Pods_IceCreamShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +85,7 @@
 				42801B511A881DF600DEB026 /* IceCreamShop */,
 				42801B501A881DF600DEB026 /* Products */,
 				E1B3556271B9796A750387AC /* Frameworks */,
+				6E004C1BF0A1D581B684D023 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -167,9 +173,19 @@
 			name = Extensions;
 			sourceTree = "<group>";
 		};
+		6E004C1BF0A1D581B684D023 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				286B7DD464CAA6D2661DC534 /* Pods-IceCreamShop.debug.xcconfig */,
+				FD54072056326AB8038C92D9 /* Pods-IceCreamShop.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		E1B3556271B9796A750387AC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A47580245AF29C9A6FD20DAD /* Pods_IceCreamShop.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -181,9 +197,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 42801B6E1A881DF600DEB026 /* Build configuration list for PBXNativeTarget "IceCreamShop" */;
 			buildPhases = (
+				8B085A21B124E02726006C8E /* [CP] Check Pods Manifest.lock */,
 				42801B4B1A881DF600DEB026 /* Sources */,
 				42801B4D1A881DF600DEB026 /* Resources */,
 				2E3FFC2B5D697FDBF99A9C5C /* Frameworks */,
+				FEF22FD7E7B081A6A2B0996D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -241,6 +259,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8B085A21B124E02726006C8E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IceCreamShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF22FD7E7B081A6A2B0996D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-IceCreamShop/Pods-IceCreamShop-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceCreamShop/Pods-IceCreamShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		42801B4B1A881DF600DEB026 /* Sources */ = {
@@ -357,6 +414,7 @@
 		};
 		42801B6F1A881DF600DEB026 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 286B7DD464CAA6D2661DC534 /* Pods-IceCreamShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -373,6 +431,7 @@
 		};
 		42801B701A881DF600DEB026 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD54072056326AB8038C92D9 /* Pods-IceCreamShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
